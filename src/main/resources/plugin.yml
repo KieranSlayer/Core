@@ -1,0 +1,12 @@
+name: Essentials
+version: ${project.version}
+main: net.gothammc.networkcore.ess.core.main.EssentialsSpigot
+authors: [ DevCow ]
+softdepend:
+  - PlaceholderAPI
+  - TitleAPI
+description: Essentials Core plugin for all GothamMC Network Servers
+commands:
+  antiafkpro:
+    description: The base command for the AntiAFK Plugin
+    aliases: [playtime,jetsantiafkpro]

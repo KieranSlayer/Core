@@ -1,0 +1,5 @@
+name: Essentials
+version: ${project.version}
+main: net.gothammc.networkcore.ess.core.main.EssentialsProxy
+authors: [ DevCow ]
+description: Essentials Core plugin for all GothamMC Network Servers

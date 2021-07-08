@@ -1,0 +1,28 @@
+################################
+#
+# NetworkCore Messages Fly Speed Command
+#
+# PAPI Support
+# %target% get the target player
+#
+#
+################################
+
+Player:
+  'Set':
+    - ""
+    - ""
+    - ""
+    - ""
+  Other:
+    'Set':
+      - ""
+      - ""
+      - ""
+      - ""
+Target:
+  'Set':
+    - ""
+    - ""
+    - ""
+    - ""
