@@ -61,7 +61,7 @@ public class AfkConfig
     public void saveDefaultConfig()
     {
         if (this.afkConfigFile == null)
-            this.afkConfigFile = new File(instance.getSpigotInstance().getDataFolder(), "Spigot/Commands/Afk/" + "config.yml");
+            this.afkConfigFile = new File(instance.getDataFolder(), "Spigot/Commands/Afk/" + "config.yml");
 
         if (!this.afkConfigFile.exists())
             instance.saveResource("Spigot/Commands/Afk/" + "config.yml", false);

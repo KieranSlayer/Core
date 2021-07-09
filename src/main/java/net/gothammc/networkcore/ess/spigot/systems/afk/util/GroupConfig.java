@@ -10,14 +10,14 @@ import java.util.HashMap;
 public class GroupConfig {
     private final HashMap<String, ConfigurationSection> groups = new HashMap<>();
 
-    private final EssentialsSpigot instance;
+    public EssentialsSpigot instance;
 
     public GroupConfig(EssentialsSpigot instance) {
         this.instance = instance;
     }
 
     public void init() {
-        FileConfiguration config = instance.getSpigotInstance().getConfigs().getAfkConfig().getAfkConfig();
+        FileConfiguration config = instance.getConfigs().getAfkConfig().getAfkConfig();
 
         config.getConfigurationSection("groups").getKeys(false).forEach(key -> {
             ConfigurationSection group = config.getConfigurationSection("groups."+key);

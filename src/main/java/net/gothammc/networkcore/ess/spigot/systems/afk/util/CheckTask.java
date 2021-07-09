@@ -67,9 +67,9 @@ public final class CheckTask extends BukkitRunnable {
                 continue;
             }
 
-            int checksBeforeAfk = this.instance.getConfigs().getAfkConfig().getAfkConfig().getInt("checksBeforeAfk");
+            int checksBeforeAfk = instance.getConfigs().getAfkConfig().getAfkConfig().getInt("checksBeforeAfk");
 
-            ConfigurationSection group = this.instance.getAfkManager().getGroups().getGroupForPlayer(player);
+            ConfigurationSection group = instance.getAfkManager().getGroups().getGroupForPlayer(player);
             if(group != null) {
                 checksBeforeAfk = group.getInt("checkAmount", checksBeforeAfk);
             }

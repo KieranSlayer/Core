@@ -2,7 +2,6 @@ package net.gothammc.networkcore.ess.spigot.commands.systems.afk;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.CommandAlias;
-import co.aikar.commands.annotation.Default;
 import net.gothammc.networkcore.ess.core.main.EssentialsSpigot;
 import net.gothammc.networkcore.ess.spigot.systems.afk.script.ActionType;
 import org.bukkit.command.Command;
@@ -16,7 +15,6 @@ public class AfkCommand extends BaseCommand
 
     public AfkCommand(EssentialsSpigot instance) { this.instance = instance; }
 
-    @Default
     public boolean afk(CommandSender sender, Command command, String label, String[] args)
     {
         if(!(sender instanceof Player)) {

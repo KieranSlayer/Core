@@ -107,10 +107,6 @@ public final class EssentialsSpigot extends JavaPlugin
         placeholderManager.registerPAPI();
     }
 
-    public EssentialsSpigot getSpigotInstance() {
-        return instance;
-    }
-
     public ConfigManager getConfigs() { return configManager; }
 
     public AfkManager getAfkManager() {

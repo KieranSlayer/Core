@@ -13,7 +13,7 @@ import org.bukkit.entity.Player;
 import java.util.StringJoiner;
 
 @CommandAlias("gafk")
-public class AfkhelpCommand extends BaseCommand
+public class AfkhelpCommand extends BaseCommand 
 {
     private EssentialsSpigot instance;
 
@@ -21,7 +21,7 @@ public class AfkhelpCommand extends BaseCommand
     {
         this.instance = instance;
     }
-
+    
     @Default
     public boolean afkHelp(CommandSender sender, Command command, String label, String[] args)
     {
